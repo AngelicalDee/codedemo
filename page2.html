@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark Mode Toggle</title>
+    <style>
+        /* Define styles for both light and dark themes */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.5s ease;
+        }
+        .dark-theme {
+            background-color: #222;
+            color: #fff;
+        }
+        button {
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+<button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+<button onclick="eloisa()">Funny Button</button>
+
+<script>
+    function toggleDarkMode() {
+        document.body.classList.toggle("dark-theme");
+    }
+    
+    function eloisa() {
+        // Simulate click on the Eloisa button
+        var eloisaButton = document.querySelector('button:nth-of-type(2)'); // Assuming "Eloisa" button is the second button
+        eloisaButton.click();
+    }
+    
+    // Simulate click on the Eloisa button when the page loads
+    window.onload = function() {
+        eloisa();
+    };
+</script>
+
+</body>
+</html>
